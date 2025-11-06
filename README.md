@@ -11,16 +11,13 @@ William-The-Reader es una aplicación web completa desarrollada en Python, dise�
 ## 🌟 Características Principales
 
 * **Autenticación de Usuarios:** Sistema completo de registro e inicio de sesión (`login.py`) para gestionar el acceso de usuarios.
-* **Procesamiento de Imágenes:** Módulo dedicado (`escanear.py`) para cargar y pre-procesar imágenes antes del análisis.
-* **Motor de IA (OCR):** Un núcleo de IA (`ia_lectora.py`) que se encarga de "leer" las imágenes y extraer el texto contenido en ellas.
+* **Procesamiento de Imágenes:** Módulo dedicado (`escanear.py`) para cargar y procesar imágenes a texto.
+* **Motor de IA (Eleven Labs):** Un núcleo de IA (`ia_lectora.py`) que se encarga de "leer" el texto de las imagenes o del propio input de la App.
 * **Base de Datos:** Persistencia de datos de usuarios y resultados de escaneo en una base de datos (`database/`).
-* **Interfaz Web:** Aplicación web centralizada (`app.py`) que sirve como punto de entrada y conecta todos los módulos.
+* **Interfaz:** Aplicación centralizada (`app.py`) que sirve como punto de entrada y conecta todos los módulos.
 
 ## 🖼️ Demostración
 
-*[¡RECOMENDADO!] Inserta aquí un GIF o una captura de pantalla de tu aplicación en funcionamiento. Sube la imagen a tu repositorio (ej. en la carpeta `assets`) y usa este enlace:*
-
-`![Demo de William-The-Reader](assets/demo.gif)`
 
 ---
 
@@ -29,10 +26,9 @@ William-The-Reader es una aplicación web completa desarrollada en Python, dise�
 Este proyecto demuestra competencia en las siguientes tecnologías:
 
 * **Backend:** **Python**
-* **Web Framework:** **Flask**
-* **IA / OCR:** **[Indica aquí la librería, ej: Tesseract, EasyOCR, OpenCV]** (implementado en `ia_lectora.py`)
-* **Base de Datos:** **[Indica aquí la BD, ej: SQLite, PostgreSQL]** (gestionado desde `database/`)
-* **Frontend:** HTML5, CSS3, JavaScript (servido desde `assets/`)
+* **IA / OCR:** **easyocr** (implementado en `ia_lectora.py`)
+* **Base de Datos:** **SQLite** (gestionado desde `database/`)
+* **Frontend:** TKinter (servido desde `assets/`)
 
 ---
 
@@ -41,13 +37,12 @@ Este proyecto demuestra competencia en las siguientes tecnologías:
 La estructura del código está diseñada para ser modular y escalable, separando las responsabilidades clave:
 
 ```text
-├── Scripts/            # Scripts de utilidad (ej. inicializar BD)
-├── assets/             # Archivos estáticos (CSS, JS, Imágenes)
+├── assets/             # Archivos estáticos (Imágenes o audios)
 ├── database/           # Almacén de la base de datos (ej. app.db)
-├── app.py              # 1. Punto de entrada principal (Flask App)
+├── app.py              # 1. Punto de entrada principal (TKinter App)
 ├── login.py            # 2. Módulo de autenticación y gestión de sesiones
-├── escanear.py         # 3. Módulo de carga y procesamiento de imágenes
-├── ia_lectora.py       # 4. Módulo de IA (OCR)
+├── escanear.py         # 3. Módulo de carga y procesamiento de imágenes (easyocr)
+├── ia_lectora.py       # 4. Módulo de IA 
 └── requirements.txt    # Dependencias del proyecto
 ```
 
@@ -56,8 +51,8 @@ La estructura del código está diseñada para ser modular y escalable, separand
 
 1.  El usuario interactúa con la aplicación principal (`app.py`).
 2.  Si el usuario no está autenticado, `app.py` utiliza `login.py` para gestionar el registro o inicio de sesión.
-3.  Una vez autenticado, el usuario carga una imagen. `app.py` pasa esta imagen al módulo `escanear.py` para su validación y pre-procesamiento.
-4.  La imagen procesada se envía al motor de IA, `ia_lectora.py`, que devuelve el texto extraído.
-5.  `app.py` muestra el resultado al usuario.
+3.  Una vez autenticado, el usuario carga una imagen o inserta un texto. En el caso de que sea imagen`app.py` pasa la imagen al módulo `escanear.py` para pasar todo el texto de la imagen.
+4.  La imagen procesada o el texto se envía al motor de IA, `ia_lectora.py`, que crea un audio con voz real humana (Utilizando Eleven Labs).
+5.  `app.py` abre este mp3 y lo ejecuta.
 
 ---
