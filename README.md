@@ -1,10 +1,12 @@
-# 👑 William-The-Reader: Plataforma de OCR con IA
+# 👑 William-The-Reader:
 
-William-The-Reader es una aplicación web completa desarrollada en Python, diseñada para escanear, procesar y extraer texto de imágenes utilizando un motor de Inteligencia Artificial (OCR). Este proyecto demuestra una arquitectura de software modular y la integración de sistemas de IA con una aplicación web funcional.
+William-The-Reader es una aplicación de escritorio completa desarrollada en Python, diseñada para leer texto escaneado, procesado y extraido de imágenes utilizando OCR. Este proyecto demuestra una arquitectura de software modular y la integración de sistemas de IA con una aplicación TKinter funcional.
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![Framework](https://img.shields.io/badge/Framework-Flask-green.svg)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
+[![UI](https://img.shields.io/badge/UI-Tkinter-orange.svg)](https://docs.python.org/3/library/tkinter.html)
+[![OCR](https://img.shields.io/badge/OCR-EasyOCR-green.svg)](https://github.com/JaidedAI/EasyOCR)
+[![TTS](https://img.shields.io/badge/TTS-ElevenLabs-blueviolet.svg)](https://elevenlabs.io/)
+[![Database](https://img.shields.io/badge/Database-SQLite-informational.svg)](https://www.sqlite.org/index.html)
 
 ---
 
