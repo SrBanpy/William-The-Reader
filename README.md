@@ -19,6 +19,11 @@ William-The-Reader is a comprehensive desktop application developed in Python, d
 * **Interface:** Centralized application (`app.py`) that serves as the entry point and connects all modules.
 
 ## 🖼️ Demonstration
+<img width="1238" height="649" alt="image" src="https://github.com/user-attachments/assets/96b1808d-fe39-4725-8985-e3c350e849ea" />
+
+<img width="1230" height="639" alt="image" src="https://github.com/user-attachments/assets/d99c8028-3b30-450f-983e-8e45230c0353" />
+
+<img width="1586" height="795" alt="image" src="https://github.com/user-attachments/assets/f883f684-a6d0-4c85-a8ef-6f6df9144bd1" />
 
 ---
 
@@ -69,6 +74,11 @@ William-The-Reader es una aplicación de escritorio completa desarrollada en Pyt
 * **Interfaz:** Aplicación centralizada (`app.py`) que sirve como punto de entrada y conecta todos los módulos.
 
 ## 🖼️ Demostración
+<img width="1238" height="649" alt="image" src="https://github.com/user-attachments/assets/96b1808d-fe39-4725-8985-e3c350e849ea" />
+
+<img width="1230" height="639" alt="image" src="https://github.com/user-attachments/assets/d99c8028-3b30-450f-983e-8e45230c0353" />
+
+<img width="1586" height="795" alt="image" src="https://github.com/user-attachments/assets/f883f684-a6d0-4c85-a8ef-6f6df9144bd1" />
 
 
 ---
